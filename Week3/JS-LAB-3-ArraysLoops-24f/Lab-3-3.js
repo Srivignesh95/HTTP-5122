@@ -13,10 +13,19 @@ var numberAmount = 0;
 	while(numberAmount < 35){
  
 		var userEntry = prompt("please Enter the cost:");
+
+		if (isNaN(userEntry)){
+
+			alert ("Please Enter the cost in number");
+
+		}
+		else{
 		
 		numberAmount += parseInt(userEntry);
 
 		amount.push(userEntry);
+		
+		}
 	
 	}
 	alert("Your shipping for this order will be free!");
