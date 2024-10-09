@@ -30,4 +30,8 @@ var numberAmount = 0;
 	}
 	alert("Your shipping for this order will be free!");
 
+	// Adding the total purchase amount to the popup
+	
+	alert("Total purchase amount:" + " $"+numberAmount);
+
 	console.log(amount.join("| "))
