@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h1 class="logo">Vicky's sleep <br> quality tracker</h1>
+      <ul class="nav">
+        <li>
+          <a href="index.html">
+            <span class="icon"><img src="images/home-icon.svg" alt="Home_icon"></span>
+            <span class="text">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="sleepData.html">
+            <span class="icon"><img src="images/bar.svg" alt="Sleep_data_icon"></span>
+            <span class="text">Sleep Data</span>
+          </a>
+        </li>
+        <li>
+          <a href="qualityofSleep.html">
+            <span class="icon"><span class="icon"><img src="images/chart.svg" alt="Sleep_data_icon"></span></span>
+            <span class="text">Quality of Mood</span>
+          </a>
+        </li>
+        <li class="active">
+          <a href="profile.html">
+            <span class="icon"><span class="icon"><img src="images/profile.svg" alt="Profile"></span></span>
+            <span class="text">Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><span class="icon"><img src="images/logout.svg" alt="Logout"></span></span>
+            <span class="text">Sign Out</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Top Bar -->
+      <header class="top-bar">
+        <div class="breadcrumb">
+          <span>Home / Dashboard</span>
+        </div>
+        <div class="top-right">
+          <div class="search-box">
+            <input type="text" placeholder="Search...">
+            <i class="icon"><img src="images/search.svg" alt="Search"></i>
+          </div>
+          <div class="profile-section">
+            <i class="icon"><img src="images/bell.svg" alt="Notification"></span></i>
+            <i class="icon"><span class="icon"><img src="images/information.svg" alt="information"></span></i>
+            <a href="profile.html"><img src="images/avatar.png" alt="Profile" class="profile-img"></a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Page Title -->
+      <div class="page-title">
+        <h1>Profile</h1>
+        <div class="profile-card">
+            <div class="profile-image">
+              <img src="images/profile_pic.png" alt="Profile Picture">
+            </div>
+            <div class="profile-details">
+              <div class="detail-item">
+                <label>First Name</label>
+                <p>Adam</p>
+              </div>
+              <div class="detail-item">
+                <label>Last Name (Optional)</label>
+                <p>Thomas</p>
+              </div>
+              <div class="detail-item">
+                <label>Email</label>
+                <p>adam.thom@gmail.com</p>
+              </div>
+              <div class="detail-item">
+                <label>Phone</label>
+                <p>543210987</p>
+              </div>
+              <div class="detail-item">
+                <label>Organization</label>
+                <p>Simmpple Web LLC</p>
+              </div>
+              <div class="detail-item">
+                <label>Birthday</label>
+                <p>20 July 1986</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+          
+    </div>
+
+  <!-- Include Chart.js Library -->
+</body>
+</html>

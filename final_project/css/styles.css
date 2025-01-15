@@ -1,0 +1,19 @@
+/* Basic CSS styling, customize according to your design */
+
+.dashboard {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Add more CSS rules for specific elements and styling */

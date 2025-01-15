@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h1 class="logo">Vicky's sleep <br> quality tracker</h1>
+      <ul class="nav">
+        <li>
+          <a href="index.html">
+            <span class="icon"><img src="images/home-icon.svg" alt="Home_icon"></span>
+            <span class="text">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="sleepData.html">
+            <span class="icon"><img src="images/bar.svg" alt="Sleep_data_icon"></span>
+            <span class="text">Sleep Data</span>
+          </a>
+        </li>
+        <li class="active">
+          <a href="qualityofSleep.html">
+            <span class="icon"><span class="icon"><img src="images/chart.svg" alt="Sleep_data_icon"></span></span>
+            <span class="text">Quality of Mood</span>
+          </a>
+        </li>
+        <li>
+          <a href="profile.html">
+            <span class="icon"><span class="icon"><img src="images/profile.svg" alt="Profile"></span></span>
+            <span class="text">Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><span class="icon"><img src="images/logout.svg" alt="Logout"></span></span>
+            <span class="text">Sign Out</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Top Bar -->
+      <header class="top-bar">
+        <div class="breadcrumb">
+          <span>Home / Quality of Sleep and Mood</span>
+        </div>
+        <div class="top-right">
+          <div class="search-box">
+            <input type="text" placeholder="Search...">
+            <i class="icon"><img src="images/search.svg" alt="Search"></i>
+          </div>
+          <div class="profile-section">
+            <i class="icon"><img src="images/bell.svg" alt="Notification"></span></i>
+            <i class="icon"><span class="icon"><img src="images/information.svg" alt="information"></span></i>
+            <a href="profile.html"><img src="images/avatar.png" alt="Profile" class="profile-img"></a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Page Title -->
+      <div class="page-title">
+        <h1>Quality of Sleep and Mood</h1>
+      </div>
+      <div style="width: 80%; margin: auto;">
+        <canvas id="qualityMoodChart"></canvas>
+    </div>
+    <div class="analysis-section">
+      <div id="best-sleep-nights" style="margin-bottom: 20px;">
+          <!-- Best Sleep Nights will be displayed here -->
+      </div>
+      <div id="sleep-suggestions">
+          <!-- Suggestions for better sleep will be displayed here -->
+      </div>
+  </div>
+  
+    </div>
+
+  </div>
+  <!-- Include Chart.js Library -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/quality-sleep.js"></script>
+</body>
+</html>

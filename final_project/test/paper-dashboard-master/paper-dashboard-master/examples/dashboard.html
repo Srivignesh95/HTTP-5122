@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vicky's Sleep Tracker</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../assets/js/scripts.js" defer></script>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h1 class="logo">Vicky's Sleep Tracker</h1>
+      <ul class="nav">
+        <li class="active"><a href="#">🏠 Dashboard</a></li>
+        <li><a href="#">📝 Sleep Data</a></li>
+        <li><a href="#">📊 Quality of Mood</a></li>
+        <li><a href="#">👤 Profile</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <header class="navbar">
+        <h2>Main Dashboard</h2>
+        <input type="text" placeholder="Search...">
+      </header>
+      <div class="content">
+        <!-- Total Sleep Section -->
+        <div class="card">
+          <h3>Total Sleep</h3>
+          <p>56 hrs</p>
+          <canvas id="lineChart"></canvas>
+        </div>
+        <!-- Quality of Sleep Section -->
+        <div class="card">
+          <h3>Quality of Sleep</h3>
+          <canvas id="pieChart"></canvas>
+        </div>
+        <!-- Sleep Data Table -->
+        <div class="card">
+          <h3>Sleep Data</h3>
+          <table id="sleepTable">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Sleep Time</th>
+                <th>Wake Up Time</th>
+                <th>Quality</th>
+                <th>Mood</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Data will be dynamically added here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Action Button -->
+  <button class="floating-button" id="addDataBtn">+</button>
+
+  <!-- Popup Form -->
+  <div class="popup-form" id="popupForm">
+    <form id="sleepForm">
+      <h3>Add Sleep Data</h3>
+      <input type="date" id="date" required>
+      <input type="time" id="sleepTime" required>
+      <input type="time" id="wakeTime" required>
+      <select id="quality">
+        <option value="Good">Good</option>
+        <option value="Moderate">Moderate</option>
+        <option value="Bad">Bad</option>
+      </select>
+      <select id="mood">
+        <option value="Energetic">Energetic</option>
+        <option value="Neutral">Neutral</option>
+        <option value="Tired">Tired</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

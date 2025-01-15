@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h1 class="logo">Vicky's sleep <br> quality tracker</h1>
+      <ul class="nav">
+        <li>
+          <a href="index.html">
+            <span class="icon"><img src="images/home-icon.svg" alt="Home_icon"></span>
+            <span class="text">Dashboard</span>
+          </a>
+        </li>
+        <li class="active">
+          <a href="sleepData.html">
+            <span class="icon"><img src="images/bar.svg" alt="Sleep_data_icon"></span>
+            <span class="text">Sleep Data</span>
+          </a>
+        </li>
+        <li>
+          <a href="qualityofSleep.html">
+            <span class="icon"><span class="icon"><img src="images/chart.svg" alt="Sleep_data_icon"></span></span>
+            <span class="text">Quality of Mood</span>
+          </a>
+        </li>
+        <li>
+          <a href="profile.html">
+            <span class="icon"><span class="icon"><img src="images/profile.svg" alt="Profile"></span></span>
+            <span class="text">Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><span class="icon"><img src="images/logout.svg" alt="Logout"></span></span>
+            <span class="text">Sign Out</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Top Bar -->
+      <header class="top-bar">
+        <div class="breadcrumb">
+          <span>Home / Sleep Data</span>
+        </div>
+        <div class="top-right">
+          <div class="search-box">
+            <input type="text" placeholder="Search...">
+            <i class="icon"><img src="images/search.svg" alt="Search"></i>
+          </div>
+          <div class="profile-section">
+            <i class="icon"><img src="images/bell.svg" alt="Notification"></span></i>
+            <i class="icon"><span class="icon"><img src="images/information.svg" alt="information"></span></i>
+            <a href="profile.html"><img src="images/avatar.png" alt="Profile" class="profile-img"></a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Page Title -->
+      <div class="page-title">
+        <h1>Sleep Data</h1>
+      </div>
+      <div class="table-container">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Date</th>
+              <th>Sleep Time</th>
+              <th>Wakeup Time</th>
+              <th>Quality of Sleep</th>
+              <th>Mood</th>
+            </tr>
+          </thead>
+          <tbody id="data-table-body">
+            <!-- Data will be dynamically populated here -->
+          </tbody>
+        </table>
+      </div>
+    
+      <div class="pagination">
+        <button id="prev-week" class="pagination-btn">Previous</button>
+        <button id="next-week" class="pagination-btn">Next</button>
+      </div>
+    </div>
+
+  </div>
+  <!-- Include Chart.js Library -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="js/sleep-data.js"></script>
+</body>
+</html>

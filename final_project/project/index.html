@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h1 class="logo">Vicky's sleep <br> quality tracker</h1>
+      <ul class="nav">
+        <li class="active">
+          <a href="index.html">
+            <span class="icon"><img src="images/home-icon.svg" alt="Home_icon"></span>
+            <span class="text">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="sleepData.html">
+            <span class="icon"><img src="images/bar.svg" alt="Sleep_data_icon"></span>
+            <span class="text">Sleep Data</span>
+          </a>
+        </li>
+        <li>
+          <a href="qualityofSleep.html">
+            <span class="icon"><span class="icon"><img src="images/chart.svg" alt="Sleep_data_icon"></span></span>
+            <span class="text">Quality of Mood</span>
+          </a>
+        </li>
+        <li>
+          <a href="profile.html">
+            <span class="icon"><span class="icon"><img src="images/profile.svg" alt="Profile"></span></span>
+            <span class="text">Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="icon"><span class="icon"><img src="images/logout.svg" alt="Logout"></span></span>
+            <span class="text">Sign Out</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Top Bar -->
+      <header class="top-bar">
+        <div class="breadcrumb">
+          <span>Home / Dashboard</span>
+        </div>
+        <div class="top-right">
+          <div class="search-box">
+            <input type="text" placeholder="Search...">
+            <i class="icon"><img src="images/search.svg" alt="Search"></i>
+          </div>
+          <div class="profile-section">
+            <i class="icon"><img src="images/bell.svg" alt="Notification"></span></i>
+            <i class="icon"><span class="icon"><img src="images/information.svg" alt="information"></span></i>
+            <a href="profile.html"><img src="images/avatar.png" alt="Profile" class="profile-img"></a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Page Title -->
+      <div class="page-title">
+        <h1>Main Dashboard</h1>
+        
+          
+      </div>
+      <div class="chart-card">
+        <!-- Left Section: Total Hours and Sleep Quality -->
+        <div class="chart-header">
+          <div class="chart-stats">
+            <div class="total-hours-container">
+              <h2 id="total-hours">56 hrs</h2> 
+            </div>
+            <p class="sleep-quality">
+              <span class="quality-indicator">Good Sleep</span>
+              <span class="arrow">▲ +2.45%</span>
+            </p>
+          </div>
+          <button id="clearData" class="clear-data-btn">Clear Data</button>
+
+        </div>
+      
+        <!-- Right Section: Graph -->
+        <div class="chart-container">
+          <canvas id="lineChart"></canvas>
+        </div>
+      </div>
+      <div class="pie-chart-card">
+        <!-- Chart and Data Container -->
+        <div class="pie-chart-content">
+          <!-- Pie Chart Section -->
+          <div class="pie-chart-container">
+            <canvas id="pieChart"></canvas>
+            <div class="chart-legend">
+              <div class="percentages">
+                <span>Good: <span id="good-percentage">0%</span></span>
+                <span>Moderate: <span id="moderate-percentage">0%</span></span>
+                <span>Bad: <span id="bad-percentage">0%</span></span>
+              </div>
+              
+            </div>
+        </div>
+        
+      
+          <!-- Data Table Section -->
+          <div class="data-table">
+            <h2>Sleep Data</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Date</th>
+                  <th>Sleep Time</th>
+                  <th>Wake Time</th>
+                  <th>Quality</th>
+                  <th>Mood</th>
+                </tr>
+              </thead>
+              <tbody id="data-table-body">
+                <!-- Dynamically populated rows go here -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Floating Button -->
+<div class="floating-btn" onclick="toggleFormPopup()">
+  <span>+</span>
+</div>
+<div class="floating-btn" onclick="toggleFormPopup()">
+  <span>+</span>
+</div>
+
+<!-- Popup Form -->
+    <div id="formPopup" class="form-popup">
+      <div class="form-popup-content">
+        <!-- Close Button -->
+        <span class="close-btn" onclick="toggleFormPopup()">✖</span>
+        <!-- Form Title -->
+        <h2 class="form-title">Add Sleep Data</h2>
+        <!-- Form Fields -->
+        <form>
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date">
+          </div>
+          <div class="form-group">
+            <label for="sleep-time">Sleep Time</label>
+            <input type="time" id="sleep-time" name="sleep-time">
+          </div>
+          <div class="form-group">
+            <label for="wake-up-time">Wake Up Time</label>
+            <input type="time" id="wake-up-time" name="wake-up-time">
+          </div>
+          <div class="form-group">
+            <label for="quality">Quality of Sleep</label>
+            <select id="quality" name="quality">
+              <option>Good</option>
+              <option>Moderate</option>
+              <option>Bad</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mood">How do you feel today?</label>
+            <select id="mood" name="mood">
+              <option>Energetic</option>
+              <option>Neutral</option>
+              <option>Tired</option>
+            </select>
+          </div>
+          <button type="submit" class="submit-btn">Add Sleep Data</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Include Chart.js Library -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

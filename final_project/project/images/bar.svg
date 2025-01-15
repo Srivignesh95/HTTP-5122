@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2048px" height="2048px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2048 2048"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil6 {fill:none}
+    .fil0 {fill:#A3AED0}
+    .fil2 {fill:#A3AED0}
+    .fil3 {fill:#A3AED0}
+    .fil1 {fill:#A3AED0;fill-rule:nonzero}
+    .fil5 {fill:#A3AED0;fill-rule:nonzero}
+    .fil4 {fill:#A3AED0;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0" x="1293.19" y="567.058" width="274.81" height="1224.94"/>
+  <path class="fil1" d="M1568 567.058l-274.81 0 0 309.527 274.81 -130.864 0 -178.663zm-274.81 364.059l0 286.578 274.81 -130.864 0 -286.577 -274.81 130.863zm0 341.11l0 286.578 274.81 -130.863 0 -286.578 -274.81 130.863zm0 341.109l0 178.665 274.81 0 0 -309.527 -274.81 130.862z"/>
+  <rect class="fil2" x="864.069" y="255.999" width="274.81" height="1536"/>
+  <g id="_417044712">
+   <rect id="_417044808" class="fil3" x="416.449" y="567.058" width="274.81" height="1224.94"/>
+   <path id="_417044952" class="fil4" d="M691.258 567.058l-274.81 0 0 309.527 274.81 -130.864 0 -178.663zm-274.81 364.059l0 286.578 274.81 -130.864 0 -286.577 -274.81 130.863zm0 341.11l0 286.578 274.81 -130.863 0 -286.578 -274.81 130.863zm0 341.109l0 178.665 274.81 0 0 -309.527 -274.81 130.862z"/>
+  </g>
+  <path class="fil5" d="M1138.88 255.999l-274.81 0 0 388.127 274.81 -164.094 0 -224.033zm-274.81 456.507l0 359.351 274.81 -164.094 0 -359.351 -274.81 164.094zm0 427.731l0 359.351 274.81 -164.094 0 -359.351 -274.81 164.094zm0 427.728l0 224.035 274.81 0 0 -388.127 -274.81 164.092z"/>
+ </g>
+ <rect class="fil6" width="2048" height="2048"/>
+</svg>
